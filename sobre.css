@@ -1,0 +1,26 @@
+
+.info{
+    color:yellow;
+    margin-top: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: auto;
+}
+
+ 
+
+a:hover {
+    color: var(--azul-escuro);
+    font-size: 110%;
+    transition: 0.3s;
+   
+}
+
+@media (max-width: 480px) {
+    .info{
+        margin-top: 0px;
+    }
+}

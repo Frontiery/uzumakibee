@@ -1,0 +1,65 @@
+.logo {
+    max-width: 20%;
+    width: auto;
+}
+
+.info {
+    color: yellow;
+    margin-top: 120px;
+    margin-left: 20px;
+    max-width: 45%;
+    text-align: justify;
+}
+
+.botinfo {
+    color: yellow;
+    margin-left: 20px;
+}
+
+.count {
+    max-width: 30%;
+}
+
+.count h4 {
+    display: inline-block;
+}
+
+@media (max-width: 480px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        max-width: 90%;
+        text-align: justify;
+        height: fit-content;
+    }
+
+    .botinfo{
+        position: relative;
+        left: -10px;
+        top: 0;
+        right: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .count{
+        max-width: 90%;
+        margin-bottom: 10px;
+        
+    }
+
+    .count h4 {
+        display: initial;
+    }
+
+    .valueCount{
+        margin-left: 5px;
+    }
+}
+   

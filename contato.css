@@ -1,0 +1,139 @@
+ body {
+     margin: 0;
+     padding: 0;
+ }
+
+ form {
+     font-size: 4%;
+     background: yellow;
+     max-width: 80%;
+     margin: 0 auto;
+     padding: 0 3% 3% 3%;
+ }
+
+ main {
+     max-width: 100%;
+     display: flex;
+ }
+
+ .formulario {
+     display: flex;
+     flex-direction: column;
+     margin-left: 20px;
+     max-width: 45%;
+     text-align: left;
+     margin-bottom: 80px;
+ }
+
+ .box {
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     margin-top: 120px;
+ }
+
+ .box-bottom {
+    margin-top: 120px;
+}
+
+ .top-text {
+     color: yellow;
+     max-width: 100%;
+     align-self: flex-start;
+ }
+
+ .contatos {
+     color:yellow;
+     display: flex;
+     flex-direction: column;
+     max-width: 45%;
+     text-align: right;
+     margin-bottom: 80px;
+ }
+
+ .info-contato {
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    text-align: center;
+}
+
+ .info-contato a {
+     color: white;
+     text-decoration: none;
+     transition: 0.3s
+ }
+
+ .info-contato a:hover {
+     color: yellow;
+     font-size: 130%;
+     transition: 0.3s;
+ }
+
+ input, textarea {
+     font-family: 'Roboto', sans-serif;
+     width: 90%;
+     padding: 0.9%;
+ }
+
+ .enviar input {
+     background-color: yellow;
+     width: 18%;
+     font-weight: bold;
+     border: 2px solid white;
+     color: black;
+     cursor: pointer;
+     transition: 0.3s;
+ }
+
+ .enviar input:hover {
+     background: orange;
+     transition: 0.3s;
+ }
+
+ textarea {
+     height: 100px;
+     resize: none;
+ }
+
+ @media (max-width: 480px) {
+     main{
+         flex-direction: column;
+     }
+     .formulario {
+         text-align: center;
+         max-width: 90%;
+         top: 0;
+         margin-bottom: inherit;
+     }
+
+     .contatos {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        text-align: initial;
+        margin-bottom: 60px;
+    }
+
+    .box {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .box-bottom {
+        margin-top: 0;
+        align-items: center;
+    }
+
+    .right-info {
+        position: relative;
+        text-align: center;
+        margin-left: 30px;
+    }
+   
+    .info-contato {
+        position: inherit;
+        text-align: center;
+    }
+
+ }
